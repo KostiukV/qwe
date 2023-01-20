@@ -1,0 +1,19 @@
+<?php
+$n = 0.55;
+$k = 1.25;
+$s = 0.99;
+$total = $n + $k +$s;
+$money = 90.22;
+$rest = $money - $total;
+if ($total > $money) 
+print "you don't have money";
+print "you give\t $money\n";
+print "you rest\t $rest\n";
+$m = [50, 20, 20, 10, 5, 2, 2, 1, 0.5, 0.25, 0.10, 0.05, 0.02, 0.02, 0.01];
+foreach ($m as $nm) {
+	if ($rest > $nm) {
+		$rest = $rest -$nm;
+	print "$nm\n";
+	}
+}
+?>
